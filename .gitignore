@@ -1,0 +1,7 @@
+.ipynb_checkpoints
+.DS_Store
+__pycache__
+PH1.compress48
+results.nbs.binned
+results.nbs.decomp
+results.rcorr.binned/

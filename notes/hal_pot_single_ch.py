@@ -224,7 +224,7 @@ class HAL_pot(object):
         wave_q_jk['ten'] = self.sum_d_waves(R_t_jk, unit, ten='ten_').reshape(self.bin_num, Ns**3)
 
         wave_q_jk['lap'] = self.sum_d_waves(R_t_jk, lap).reshape(self.bin_num, Ns**3)/(2.0*self.m_red)
- 
+        
         wave_q_jk['dt'] = np.array([ -(0.5*(wave_q_jk['wave_p'][ibin,:,:,:] - wave_q_jk['wave_m'][ibin,:,:,:])) 
             for ibin in range(self.bin_num)]).reshape(self.bin_num,Ns**3)
 
